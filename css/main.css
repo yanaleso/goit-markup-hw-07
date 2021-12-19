@@ -36,7 +36,7 @@ img {
   height: auto;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
@@ -292,7 +292,7 @@ body {
   margin-right: 0;
 }
 
-.peculiarities__background {
+.peculiarities__box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -324,7 +324,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.section-activity {
+.section--padding-top {
   padding-top: 0;
 }
 
@@ -379,7 +379,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.team__subtitle {
+.team__text {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
@@ -529,11 +529,6 @@ body {
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
-  opacity: 0;
-}
-
 .modal {
   width: 528px;
   min-height: 581px;
@@ -548,6 +543,11 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   text-align: center;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0;
 }
 
 .modal__btn {
@@ -706,6 +706,7 @@ textarea {
 .modal__link {
   color: var(--accent-color);
   text-decoration-skip-ink: none;
+  text-decoration: underline;
 }
 
 .filter {

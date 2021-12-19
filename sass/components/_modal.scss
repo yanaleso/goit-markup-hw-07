@@ -13,10 +13,6 @@
     opacity: 0;
     pointer-events: none;
   }
-  &.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.9);
-    opacity: 0;
-  }
 }
 
 .modal {
@@ -35,6 +31,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   text-align: center;
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+  }
 }
 
 .modal__btn {
@@ -191,4 +191,5 @@ textarea {
 .modal__link {
   color: var(--accent-color);
   text-decoration-skip-ink: none;
+  text-decoration: underline;
 }
